@@ -1,0 +1,218 @@
+.page3 {
+  position: relative;
+  width: 1920px;
+  margin: auto;
+}
+.page3-section1 {
+  position: relative;
+  margin-top: -110px;
+  width: 100%;
+  height: 1441px;
+  background: url(../../assets/img/page3/bg1.png);
+  background-size: 100% 100%;
+}
+
+.page3-section1-title {
+  padding-left: 68px;
+  box-sizing: border-box;
+  width: 304px;
+  height: 78px;
+  position: absolute;
+  bottom: 579px;
+  left: 808px;
+  font-family: Source Han Serif CN;
+  font-weight: 400;
+  font-size: 58px;
+  color: #161616;
+  line-height: 58px;
+  background: url(../../assets/img/page3/bg1-title.png);
+  background-size: 100% 100%;
+}
+
+.page3-section1-desc {
+  position: absolute;
+  bottom: 400px;
+  left: 0;
+  right: 0;
+  font-family: PingFang SC;
+  font-weight: 300;
+  font-size: 26px;
+  color: #0F0F0F;
+  line-height: 50px;
+  text-align: center;
+}
+
+
+
+.page3-section2 {
+  position: relative;
+  margin-top: -1px;
+  width: 100%;
+  height: 2325px;
+  background: url(../../assets/img/page3/bg2.png);
+  background-size: 100% 100%;
+}
+.page3-section2-title1 {
+  position: relative;
+  left: 345px;
+  top: 13px;
+  box-sizing: border-box;
+  width: 550px;
+  height: 102px;
+  background: url(../../assets/img/page3/bg2-title1.png);
+  background-size: 100% 100%;
+  padding-left: 60px;
+  font-family: Source Han Serif CN;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.page3-section2-desc {
+  position: relative;
+  margin-top: 23px;
+  left: 345px;
+  width: 888px;
+  font-family: PingFang SC;
+  font-weight: 300;
+  font-size: 26px;
+  color: #0F0F0F;
+  line-height: 50px;
+  letter-spacing: -1px;
+}
+.page3-section2-desc > span {
+  color: #850D06;
+}
+.no-margin {
+  margin-top: 0;
+}
+
+.page3-section2-side {
+  position: absolute;
+  top: 212px;
+  right: 159px;
+  width: 472px;
+  height: 808px;
+  background: url(../../assets/img/page3/bg2-side.png);
+  background-size: 100% 100%;
+}
+
+.page3-section2-title2{
+  position: relative;
+  left: 859px;
+  box-sizing: border-box;
+  width: 550px;
+  height: 48px;
+  background: url(../../assets/img/page3/bg2-title2.png) no-repeat 0 6px;
+  background-size: 96px 42px;
+  padding-left: 110px;
+  margin-top: 162px;
+  font-family: Source Han Serif CN;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.page3-section2-content {
+  position: relative;
+  background: url(../../assets/img/page3/bg2-content.png) no-repeat center center;
+  background-size: 100% 100%;
+  width: 1698px;
+  height: 994px;
+  margin: 15px auto 28px;
+  box-sizing: border-box;
+  padding: 69px 48px 0 461px;
+  font-family: PingFang SC;
+  font-weight: 300;
+  font-size: 26px;
+  color: #fff;
+  line-height: 50px;
+}
+
+.page3-section2-content  span {
+  color: #FFEBA2;
+}
+
+.page3-section3 {
+  position: relative;
+  margin-top: -1px;
+  width: 100%;
+  height: 2032px;
+  background: url(../../assets/img/page3/bg3.png);
+  background-size: 100% 100%;
+}
+
+.page3-section3-title {
+  position: relative;
+  left: 353px;
+  top: 44px;
+  box-sizing: border-box;
+  width: 542px;
+  height: 101px;
+  line-height: 45px;
+  padding-left: 53px;
+  background: url(../../assets/img/page3/bg3-title1.png);
+  background-size: 100% 100%;
+  font-family: Source Han Serif CN;
+  font-weight: 400;
+  font-size: 50px;
+  color: #000000;
+}
+
+.page3-section3-title-desc {
+  position: relative;
+  left: 353px;
+  top: 72px;
+  width: 1056px;
+  height: 526px;
+  font-family: PingFang SC;
+  font-weight: 300;
+  font-size: 26px;
+  color: #0F0F0F;
+  line-height: 50px;
+  letter-spacing: -1px;
+}
+
+.page3-section3-title-desc + .page3-section3-title-desc {
+  margin-top: 96px;
+  width: 947px;
+  height: 477px;
+}
+
+.page3-section3-title-desc span {
+  color: #850D06;
+}
+
+.page3-section3-content {
+  position: absolute;
+  left: 353px;
+  bottom: 323px;
+  width: 1000px;
+  height: 363px;
+  background: url(../../assets/img/page3/bg3-content.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.page3-section3-content-desc1 {
+  position: absolute;
+  left: 390px;
+  bottom: 262px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  font-size: 25px;
+  color: #000000;
+  line-height: 56px;
+}
+
+.page3-section3-content-desc2 {
+  position: absolute;
+  left: 1011px;
+  bottom: 262px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  font-size: 25px;
+  color: #000000;
+  line-height: 56px;
+}
