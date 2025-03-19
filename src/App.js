@@ -4,7 +4,7 @@ import Header from './components/Header';
 import IntroScreen from './components/IntroScreen';
 import Lottery from './components/Lottery';
 import Page1 from './components/Page1';
-// import Page2 from './components/Page2';
+import Page2 from './components/Page2';
 import Page3 from './components/Page3';
 import Page4 from './components/Page4';
 import './App.css';
@@ -27,10 +27,9 @@ function App() {
       {
         tabIndex === 1 ? <Page1 /> : null
       }
-      {/* {
+      {
         tabIndex === 2 ? <Page2 /> : null
       }
-       */}
       {
         tabIndex === 3 ? <Page3 /> : null
       }
