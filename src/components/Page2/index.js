@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import classNames from 'classnames';
+import { motion } from "framer-motion";
 import './index.css';
 
 import SimpleSwiper from './components/Simpleswiper';
@@ -58,10 +59,38 @@ export default function Page2() {
 
   return (<div className="page2">
     <section className="page2-section1">
-      <div className="page2-section1-bg1"></div>
-      <div className="page2-section1-bg2"></div>
-      <div className="page2-section1-bg3"></div>
-      <div className="page2-section1-bg4"></div>
+      <motion.div
+        className="page2-section1-bg1"
+        layout
+        initial={{ opacity: 0, x: -200 }}      // 初始状态
+        whileInView={{ opacity: 1, x: 0 }}   // 进入视口时的目标状态
+        transition={{ duration: 1 }}       // 动画过渡参数
+      >
+      </motion.div>
+      <motion.div
+        className="page2-section1-bg2"
+        layout
+        initial={{ opacity: 0, x: 200 }}      // 初始状态
+        whileInView={{ opacity: 1, x: 0 }}   // 进入视口时的目标状态
+        transition={{ duration: 1 }}       // 动画过渡参数
+      >
+      </motion.div>
+      <motion.div
+        className="page2-section1-bg3"
+        layout
+        initial={{ opacity: 0, x: -200 }}      // 初始状态
+        whileInView={{ opacity: 1, x: 0 }}   // 进入视口时的目标状态
+        transition={{ duration: 1 }}       // 动画过渡参数
+      >
+      </motion.div>
+      <motion.div
+        className="page2-section1-bg4"
+        layout
+        initial={{ opacity: 0, x: 200 }}      // 初始状态
+        whileInView={{ opacity: 1, x: 0 }}   // 进入视口时的目标状态
+        transition={{ duration: 1 }}       // 动画过渡参数
+      >
+      </motion.div>
       <div className="page2-section1-content"></div>
       <div className="page2-section1-title"></div>
     </section>

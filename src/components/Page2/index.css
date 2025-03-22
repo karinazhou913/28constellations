@@ -39,8 +39,10 @@
     height: 1053px;
     background: url(../../assets/img/page2/bg1-1.png) no-repeat center center;
     background-size: auto 100%;
-    opacity: 0; /* 初始透明度 */
-    animation: slide-in-left 2s forwards; /* 应用动画 */
+    /* opacity: 0;  */
+    /* 初始透明度 */
+    /* animation: slide-in-left 2s forwards;  */
+    /* 应用动画 */
 }
 .page2-section1-bg2 {
     position: absolute;
@@ -51,8 +53,10 @@
     height: 1044px;
     background: url(../../assets/img/page2/bg1-2.png) no-repeat center center;
     background-size: auto 100%;
-    opacity: 0; /* 初始透明度 */
-    animation: slide-in-right 2s forwards; /* 应用动画 */
+    /* opacity: 0;  */
+    /* 初始透明度 */
+    /* animation: slide-in-right 2s forwards;  */
+    /* 应用动画 */
     
 }
 .page2-section1-bg3 {
@@ -64,20 +68,24 @@
     height: 901px;
     background: url(../../assets/img/page2/bg1-3.png) no-repeat center center;
     background-size: auto 100%;
-    opacity: 0; /* 初始透明度 */
-    animation: slide-in-left 2s forwards; /* 应用动画 */
+    /* opacity: 0;  */
+    /* 初始透明度 */
+    /* animation: slide-in-left 2s forwards;  */
+    /* 应用动画 */
 }
 .page2-section1-bg4 {
     position: absolute;
-    right: 0;
+    right: -81px;
     top: 1952px;
     z-index: 2;
     width: 1039px;
     height: 901px;
     background: url(../../assets/img/page2/bg1-4.png) no-repeat center center;
     background-size: auto 100%;
-    opacity: 0; /* 初始透明度 */
-    animation: slide-in-right 2s forwards; /* 应用动画 */
+    /* opacity: 0; */
+     /* 初始透明度 */
+    /* animation: slide-in-right 2s forwards;  */
+    /* 应用动画 */
 }
 .page2-section1-content {
     position: absolute;
