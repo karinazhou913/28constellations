@@ -1,23 +1,23 @@
 import { useEffect } from 'react';
+import { motion } from 'framer-motion';
 import './index.css';
 
 function Page1() {
 
   useEffect(() => {
-    window.addEventListener("scroll", function () {
-      const img = document.querySelector(".page1-section2-animation");
-      console.log('>>window.scrollY', window.scrollY)
-      try {
-        if (window.scrollY >= 2000) {
-          img.classList.add("animate");
-        } else {
-          img.classList.remove("animate");
-        }
-      } catch (e) {
-        console.log(e)
-      }
-
-    });
+    // window.addEventListener("scroll", function () {
+    //   const img = document.querySelector(".page1-section2-animation");
+    //   console.log('>>window.scrollY', window.scrollY)
+    //   try {
+    //     if (window.scrollY >= 2000) {
+    //       img.classList.add("animate");
+    //     } else {
+    //       img.classList.remove("animate");
+    //     }
+    //   } catch (e) {
+    //     console.log(e)
+    //   }
+    // });
   }, [])
 
   return (
@@ -47,8 +47,12 @@ function Page1() {
         </div>
         <div className="page1-section2-desc-content"></div>
 
-        {/* TODO ANIMATE */}
-        <div className="page1-section2-animation">
+        <motion.div className="page1-section2-animation"
+          layout
+          initial={{ opacity: 0, y: 500 }}      // 初始状态
+          whileInView={{ opacity: 1, y: 0 }}   // 进入视口时的目标状态
+          transition={{ duration: 1 }}       // 动画过渡参数
+        >
           <div className="page1-section2-animation-title"></div>
 
           <div className="page1-section2-animation-desc">
@@ -59,8 +63,7 @@ function Page1() {
             <span>七曜特质渗透：</span> 神禽兼具星曜能量，如房日兔含太阳之精，心月狐具太阴之灵，构成“星体一神禽一能量”三位一体结构。
           </div>
           <div className="page1-section2-animation-content"></div>
-        </div>
-
+        </motion.div>
       </section>
       <section className="page1-section3">
         <div className="page1-section3-title"></div>
@@ -78,8 +81,6 @@ function Page1() {
           <div className="page1-section3-progress-desc7">哲学与文化内核</div>
         </div>
         <div className="page1-section3-content"></div>
-
-
       </section>
     </div>
   );
