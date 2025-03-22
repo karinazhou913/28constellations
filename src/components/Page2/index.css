@@ -623,9 +623,8 @@
   left: 0;
   right: 0;
   margin: auto;
-  width: 1280px;
+  width: 1418px;
   height: 542px;
-  background-color: #fff;
 }
 
 .page2-section2-swiper-navigation {
@@ -634,9 +633,8 @@
   left: 0;
   right: 0;
   margin: auto;
-  width: 1280px;
+  width: 1418px;
   height: 32px;
-  background-color: red;
 }
 
 /* 第三部分 */
@@ -665,4 +663,12 @@
   color: #000000;
   background: url(../../assets/img/page2/section3-title.png) no-repeat center center;
   background-size: 100% 100%;
+}
+
+.page2-section3-swiper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 200px;
+  margin: 0 auto;
 }

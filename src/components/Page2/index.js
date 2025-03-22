@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import './index.css';
 
 import SimpleSwiper from './components/Simpleswiper';
+import MixSwiper from './components/MixSwiper';
 const TAB = [0, 1, 2, 3];
 
 const TAB_CONTENT = [
@@ -112,10 +113,7 @@ export default function Page2() {
         面部造型表现出所对应的动物特性。
       </div>
       <div className="page2-section2-swiper">
-        TODO
-      </div>
-      <div className="page2-section2-swiper-navigation">
-        TODO
+        <MixSwiper />
       </div>
     </section>
     <section className="page2-section3">
