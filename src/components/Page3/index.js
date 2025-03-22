@@ -1,12 +1,20 @@
+import { motion } from "framer-motion";
+
 import './index.css';
 
 export default function Page3() {
   return (
     <div className="page3">
       <section className="page3-section1">
-        <div className="page3-section1-title">
+        <motion.div
+          className="page3-section1-title"
+          layout
+          initial={{ opacity: 0, y: -100 }}      // 初始状态
+          whileInView={{ opacity: 1, y: 0 }}   // 进入视口时的目标状态
+          transition={{ duration: 1 }}       // 动画过渡参数
+        >
           生活信仰
-        </div>
+        </motion.div>
         <div className="page3-section1-desc">
           古人相信天上的星移斗转与地面上的人间所发生的事件有所呼应，将突然发生<br />
           的自然现象与生活中无法预测的某些重大事件的发生与星宿的运行变化相关联，<br />
@@ -28,12 +36,25 @@ export default function Page3() {
         <div className="page3-section2-desc no-margin">
           同样，天文图石刻上也有对二十四节气的描述：<span>二十四气本一气也，以一岁言之以十二月言之，则一气分而为六气…又于六阴六阳之中，每一气分为初终，则又裂而为二十四气。</span>在西汉末年著名学者刘歆整理的《三统历》中，对二十八星宿和二十八节气的对应关系有着清晰的划分：春分，奎宿二度五十分；清明，娄宿初度四十分⋯夏至，井宿九度十三分。小暑，井宿二十三度六十六分.上述切实的史料记载，证明了星宿文化与二十四节气之间的密切关系，可以见得古代星宿文化经世致用的重要特点。
         </div>
-        <div className="page3-section2-side"></div>
+        <motion.div
+          className="page3-section2-side"
+          layout
+          initial={{ opacity: 0, x: 0 }}      // 初始状态
+          whileInView={{ opacity: 1, x: 100 }}   // 进入视口时的目标状态
+          transition={{ duration: 1 }}       // 动画过渡参数
+        >
+        </motion.div>
 
         <div className="page3-section2-title2">
           应用科学·制定历法
         </div>
-        <div className="page3-section2-content">
+        <motion.div
+          className="page3-section2-content"
+          layout
+          initial={{ opacity: 0, y: 20 }}      // 初始状态
+          whileInView={{ opacity: 1, y: 0 }}   // 进入视口时的目标状态
+          transition={{ duration: 1 }}       // 动画过渡参数
+        >
           <div>
             <span>
               在应用科学方面，古人通过观测星宿的位置变化来确定时令节气，以此制定历法，“观星授时”使农业生产活动有了具体而准确的参考标准。
@@ -46,7 +67,7 @@ export default function Page3() {
           <div>
             星宿对生产生活的影响，主要还是通过观测行星运转的行径规律作出历法，在与长年累月的生产生活经验相对应，得出包括二十四节气、十二星次等重要的时令节气，用于指导人们的生活，在农业生产中，它为节气确定、农事安排、气候预测和灾害防范提供了关键依据，保障了农业的稳定发展，在计时与历法编制中，起到了夜间计时和构建阴历历法体系的基础作用，规范了社会生活的时间秩序。
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="page3-section3">
         <div className="page3-section3-title">信仰政治·制定历法</div>

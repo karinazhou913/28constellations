@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState } from 'react';
 import './index.css';
 import classNames from 'classnames';
@@ -6,11 +7,17 @@ const TAB = ['画作', '雕塑', '绘画']
 export default function Page4() {
   const [tabIndex, setTabIndex] = useState(0);
 
-
   return (
     <div className="page4">
       <section className="page4-section1">
-        <div className="page4-section1-title"></div>
+        <motion.div
+          className="page4-section1-title"
+          layout
+          initial={{ opacity: 0, y: -100 }}      // 初始状态
+          whileInView={{ opacity: 1, y: 0 }}   // 进入视口时的目标状态
+          transition={{ duration: 1 }}       // 动画过渡参数
+        >
+        </motion.div>
         <div className="page4-section1-desc">
           古往今来， 以二十八星宿为主题的艺术创作浩瀚如星海， 古人通过星宿图或作美好想象
           或作装饰或作纹样符号的艺术文化遗产， 往往映射着作者本人的信仰理念和当时作品所
