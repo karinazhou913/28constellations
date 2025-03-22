@@ -43,6 +43,7 @@ export default function IntroScreen({
   // 视频错误处理
   const handleVideoError = () => {
     setIsVideoError(true);
+    setHasVideoEnded(true);
     if (videoRef.current) {
       videoRef.current.remove();
     }
@@ -57,6 +58,7 @@ export default function IntroScreen({
         }
       } catch (err) {
         setIsVideoError(true);
+        setHasVideoEnded(true);
       }
     };
     attemptAutoPlay();
@@ -83,7 +85,7 @@ export default function IntroScreen({
             <video
               ref={videoRef}
               className="media-frame"
-              muted
+              muted={false}
               autoPlay
               playsInline
               onEnded={() => setHasVideoEnded(true)}
@@ -91,6 +93,7 @@ export default function IntroScreen({
               src={Video}
             >
               您的浏览器不支持视频播放
+              <source src={Video} type='video/mp4'></source>
             </video>
           )}
 
