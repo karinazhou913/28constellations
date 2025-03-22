@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Header from './components/Header';
 import IntroScreen from './components/IntroScreen';
@@ -8,9 +8,19 @@ import Page2 from './components/Page2';
 import Page3 from './components/Page3';
 import Page4 from './components/Page4';
 import './App.css';
-
+function scrollToTop() {
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  if (c > 0) {
+    window.requestAnimationFrame(scrollToTop);
+    window.scrollTo(0, c - c / 8); // 调整除数可改变滚动速度
+  }
+}
 function App() {
   const [tabIndex, setTabIndex] = useState(0);
+
+  useEffect(() => {
+    scrollToTop();
+  }, [tabIndex])
 
   return (
     <div className="App">
