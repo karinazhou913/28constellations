@@ -4,7 +4,15 @@
   height: 100vh;
   overflow: hidden;
 }
-
+.media-btn {
+  position: fixed;
+  right: 20px;
+  top: 30px;
+  background: rgba(0,0,0,.9);
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+}
 .video-container {
     width: 1920px;
     height: 1080px;

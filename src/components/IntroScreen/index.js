@@ -38,7 +38,7 @@ export default function IntroScreen({
   const [showNavigation, setShowNavigation] = useState(false);
   const videoRef = useRef(null);
   const [hoveredButton, setHoveredButton] = useState(1);
-
+  const [muted, setMuted] = useState(false);
 
   // 视频错误处理
   const handleVideoError = (err) => {
@@ -55,8 +55,8 @@ export default function IntroScreen({
       try {
         if (videoRef.current) {
           await videoRef.current.play();
-          videoRef.current.muted = false; // 自动播放成功后取消静音
           setHasVideoEnded(false);
+
         }
       } catch (err) {
         setIsVideoError(true);
@@ -70,6 +70,17 @@ export default function IntroScreen({
     onChangeTab(index)
   }
 
+  const handlePlayMuted = () => {
+    try {
+      if (videoRef.current) {
+        setMuted(!muted)
+        videoRef.current.muted = muted; // 自动播放成功后取消静音
+      }
+    } catch (err) {
+    }
+  }
+
+  console.log(">> muted", muted)
   return (
     <div className="container">
       {/* 视频容器 */}
@@ -109,6 +120,8 @@ export default function IntroScreen({
               </div>
             </div>
           )}
+
+          <div className='media-btn' onClick={handlePlayMuted}></div>
         </div>
       )}
 
