@@ -2,13 +2,19 @@
   width: 32px;
   height: 32px;
   margin: 0 16px;
-  background: none;
+  background: url(../../../../assets/img/page2/swiper-navigation-default.png) no-repeat center center;
+  background-size: 100% 100%;
 }
 
-.swiper-pagination-bullets {
+.swiper-pagination-bullet-active {
+  background: url(../../../../assets/img/page2/swiper-navigation-active.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.page2-section3-swiper .swiper-pagination-bullets {
   bottom: -40px;
 }
 
-.mySwiper {
+.page2-section3-swiper .mySwiper {
   overflow: inherit;
 }

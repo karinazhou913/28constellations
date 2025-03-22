@@ -15,17 +15,6 @@
   bottom: 0;
 }
 
-.swiper-pagination-bullet {
-  width: 32px;
-  height: 32px;
-  margin: 0 16px;
-  background: none;
-}
-
-.swiper-pagination-bullets {
-  bottom: -40px;
-}
-
 .mySwiper {
   overflow: inherit;
 }

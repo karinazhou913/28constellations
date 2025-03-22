@@ -44,13 +44,13 @@ const MySwiper = () => {
   // 自定义分页器图片
   const pagination = {
     clickable: true,
-    renderBullet: (index, className) => {
-      return `
-        <span class="${className}">
-          <img src="${paginationDefault}" style="margin: 0 16px;width: 32px; height: 32px; object-fit: cover"/>
-        </span>
-      `;
-    },
+    // renderBullet: (index, className) => {
+    //   return `
+    //     <span class="${className}">
+    //       <img src="${paginationDefault}" style="margin: 0 16px;width: 32px; height: 32px; object-fit: cover"/>
+    //     </span>
+    //   `;
+    // },
   };
 
   return (
