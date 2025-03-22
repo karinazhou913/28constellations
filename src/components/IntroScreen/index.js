@@ -41,7 +41,7 @@ export default function IntroScreen({
 
 
   // 视频错误处理
-  const handleVideoError = () => {
+  const handleVideoError = (err) => {
     setIsVideoError(true);
     setHasVideoEnded(true);
     if (videoRef.current) {
@@ -93,7 +93,6 @@ export default function IntroScreen({
               src={Video}
             >
               您的浏览器不支持视频播放
-              <source src={Video} type='video/mp4'></source>
             </video>
           )}
 
