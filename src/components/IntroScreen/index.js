@@ -55,6 +55,8 @@ export default function IntroScreen({
       try {
         if (videoRef.current) {
           await videoRef.current.play();
+          videoRef.current.muted = false; // 自动播放成功后取消静音
+          setHasVideoEnded(false);
         }
       } catch (err) {
         setIsVideoError(true);
@@ -85,12 +87,13 @@ export default function IntroScreen({
             <video
               ref={videoRef}
               className="media-frame"
-              muted={false}
+              muted
               autoPlay
               playsInline
               onEnded={() => setHasVideoEnded(true)}
               onError={handleVideoError}
               src={Video}
+              preload='auto'
             >
               您的浏览器不支持视频播放
             </video>
