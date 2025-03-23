@@ -7,7 +7,7 @@
   src: url("./assets//fonts/simkai.ttf"); /* 引入本体字体文件 */
 }
 .App {
-  width: 1920px;
+  /* width: 1920px; */
   margin: auto;
   position: relative;
 }
