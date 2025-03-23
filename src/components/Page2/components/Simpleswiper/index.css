@@ -1,0 +1,21 @@
+.swiper-pagination-bullet {
+  opacity: 1;
+  width: 32px;
+  height: 32px;
+  margin: 0 16px;
+  background: url(../../../../assets/img/page2/swiper-navigation-default.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.swiper-pagination-bullet-active {
+  background: url(../../../../assets/img/page2/swiper-navigation-active.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.page2-section3-swiper .swiper-pagination-bullets {
+  bottom: -40px;
+}
+
+.page2-section3-swiper .mySwiper {
+  overflow: inherit;
+}

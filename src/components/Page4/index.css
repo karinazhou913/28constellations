@@ -1,0 +1,336 @@
+.page4 {
+  position: relative;
+  width: 1920px;
+  margin: auto;
+}
+.page4-section1 {
+  position: relative;
+  margin-top: -110px;
+  width: 100%;
+  height: 2074px;
+  background: url(../../assets/img/page4/bg1.png);
+  background-size: 100% 100%;
+}
+
+.page4-section1-title {
+  width: 44px;
+  height: 44px;
+  position: relative;
+  top: 561px;
+  left: 516px;
+  background: url(../../assets/img/page4/bg1-title1.png);
+  background-size: 100% 100%;
+}
+.page4-section1-title::after {
+  content: "文遗作品";
+  position: absolute;
+  left: -100px;
+  top: 0;
+  width: 54px;
+  height: 230px;
+  line-height: 72px;
+  color: #FFFFFF;
+  font-size: 58px;
+  font-family: Source Han Serif CN;  
+}
+
+.page4-section1-desc {
+  position: absolute;
+  top: 624px;
+  left: 516px;
+  width: 1012px;
+  font-family: PingFang SC;
+  font-weight: 300;
+  font-size: 26px;
+  color: #fff;
+  line-height: 50px;
+}
+.page4-section1-title-text {
+  position: absolute;
+  top: 780px;
+  left: 519px;
+  width: 978px;
+  height: 106px;
+  background: url(../../assets/img/page4/bg1-title-text.png);
+  background-size: 100% 100%;
+}
+.page4-section1-title2 {
+  position: absolute;
+  top: 978px;
+  left: 660px;
+  box-sizing: border-box;
+  padding-left: 73px;
+  width: 556px;
+  height: 106px;
+  background: url(../../assets/img/page4/bg1-title2.png);
+  background-size: 100% 100%;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 46px;
+  color: #FFFFFF;
+  font-family: Source Han Serif CN;
+}
+.page4-section1-tab {
+  position: absolute;
+  bottom: 869px;
+  left: 293px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1343px;
+  height: 93px;
+  background: url(../../assets/img/page4/bg1-line.png) no-repeat bottom center;
+  background-size: 100% 17px;
+}
+
+.page4-section1-tab-item {
+  width: 285px;
+  height: 76px;
+  text-align: center;
+  cursor: pointer;
+  font-family: Source Han Serif CN;
+  font-weight: 400;
+  font-size: 46px;
+  color: #FFFFFF;
+}
+
+.page4-section1-tab-item.active {
+  background: linear-gradient(0deg, #FFF9CB 0%, #F8D370 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page4-section1-tab-content {
+  position: absolute;
+  bottom: 120px;
+  left: 429px;
+  width: 1048px;
+  height: 694px;
+}
+.page4-section1-tab-content.bg1 {
+  background: url(../../assets/img/page4/bg1-tab1.png) no-repeat center center;
+  background-size: 100%;
+}
+.page4-section1-tab-content.bg2 {
+  background: url(../../assets/img/page4/bg1-tab2.png) no-repeat center center;
+  background-size: 100%;
+}
+.page4-section1-tab-content.bg3 {
+  background: url(../../assets/img/page4/bg1-tab3.png) no-repeat center center;
+  background-size: 100%;
+}
+
+
+.page4-section2 {
+  position: relative;
+  margin-top: -1px;
+  width: 100%;
+  height: 1735px;
+  background: url(../../assets/img/page4/bg2.png);
+  background-size: 100% 100%;
+}
+.page4-section2-title1 {
+  position: relative;
+  left: 345px;
+  top: 13px;
+  box-sizing: border-box;
+  width: 1292px;
+  height: 88px;
+  background: url(../../assets/img/page4/bg2-title1.png);
+  background-size: 100% 100%;
+  padding-left: 80px;
+  font-family: Source Han Serif CN;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 65px;
+  color: #FFF8E5;
+}
+
+.page4-section2-content {
+  position: relative;
+  background: url(../../assets/img/page4/bg2-content.png) no-repeat center center;
+  background-size: 100% 100%;
+  width: 1246px;
+  height: 1339px;
+  margin: 103px auto 0;
+  font-family: PingFang SC;
+  font-weight: 300;
+  font-size: 26px;
+  color: #fff;
+  line-height: 50px;
+}
+.page4-section2-content-title {
+  position: absolute;
+  top: 279px;
+  right: 148px;
+  font-family: PingFang SC;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.page4-section2-content-desc {
+  position: absolute;
+  bottom: 200px;
+  left: 791px;
+  font-family: PingFang SC;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.page4-section2-content-desc .title {
+  height: 28px;
+  font-family: Source Han Serif CN;
+  font-weight: 600;
+  font-size: 29px;
+  color: #3F100D;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+
+.page4-section2-content-desc .li {
+  margin-bottom: 27px;
+  width: 409px;
+  letter-spacing: -1px;
+}
+
+.page4-section2-content-desc .li-title {
+  font-family: PingFangSC;
+  font-weight: 500;
+}
+
+.page4-section2-content-desc .li-desc {
+  font-family: PingFangSC;
+  font-weight: 300;
+}
+
+.page4-section3 {
+  position: relative;
+  margin-top: -1px;
+  width: 100%;
+  height: 2805px;
+  background: url(../../assets/img/page4/bg3.png);
+  background-size: 100% 100%;
+}
+
+.page4-section3-title {
+  position: relative;
+  left: 319px;
+  top: 59px;
+  box-sizing: border-box;
+  width: 707px;
+  height: 92px;
+  line-height: 60px;
+  padding-left: 70px;
+  background: url(../../assets/img/page4/bg3-title1.png);
+  background-size: 100% 100%;
+  font-family: Source Han Serif CN;
+  font-weight: 400;
+  font-size: 50px;
+  color: #FFF8E5;
+}
+
+.page4-section3-title-desc1 {
+  position: absolute;
+  left: 353px;
+  top: 233px;
+  padding-left: 124px;
+  width: 1178px;
+  height: 49px;
+  font-family: PingFang SC;
+  font-weight: 300;
+  font-size: 29px;
+  color:#FFFFFF;
+  line-height: 29px;
+
+  background: url(../../assets/img/page4/bg3-line.png);
+  background-size: 100% 100%;
+}
+.page4-section3-title-content1 {
+  position: absolute;
+  top: 317px;
+  left: 401px;
+  width: 1112px;
+  height: 814px;
+}
+.page4-section3-title-content2 {
+  position: absolute;
+  bottom: 725px;
+  left: 401px;
+  width: 1112px;
+  height: 814px;
+}
+
+.page4-section3-title-content {
+  width: 535px;
+  height: 814px;
+}
+
+.page4-section3-title-content1-img1 {
+  position: absolute;
+  left: 0;
+  top:0;
+  background: url(../../assets/img/page4/bg3-content1.png);
+  background-size: 100% 100%;
+}
+.page4-section3-title-content1-img2 {
+  position: absolute;
+  right: 0;
+  top:0;
+  background: url(../../assets/img/page4/bg3-content2.png);
+  background-size: 100% 100%;
+}
+.page4-section3-title-content2-img1 {
+  position: absolute;
+  left: 0;
+  top:0;
+  background: url(../../assets/img/page4/bg3-content3.png);
+  background-size: 100% 100%;
+}
+.page4-section3-title-content2-img2 {
+  position: absolute;
+  right: 0;
+  top:0;
+  background: url(../../assets/img/page4/bg3-content4.png);
+  background-size: 100% 100%;
+}
+
+.page4-section3-title-desc2 {
+  position: absolute;
+  left: 353px;
+  top: 1183px;
+  padding-left: 124px;
+  width: 1178px;
+  height: 49px;
+  font-family: PingFang SC;
+  font-weight: 300;
+  font-size: 29px;
+  color:#FFFFFF;
+  line-height: 29px;
+
+  background: url(../../assets/img/page4/bg3-line.png);
+  background-size: 100% 100%;
+}
+
+
+.page4-section3-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 251px;
+  height: 386px;
+  font-family: PingFang SC;
+  font-weight: 300;
+  font-size: 29px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 50px;
+}
+
+.page4-section3-text >span {
+  color: #FFE391;
+}

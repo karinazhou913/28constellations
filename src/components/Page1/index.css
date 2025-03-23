@@ -1,0 +1,306 @@
+.page1 {
+  position: relative;
+  width: 1920px;
+  margin: auto;
+}
+.page1-section1 {
+  position: relative;
+  margin-top: -110px;
+  width: 100%;
+  height: 2636px;
+  background: url(../../assets/img/page1/bg1.png);
+  background-size: 100% 100%;
+}
+
+.page1-title {
+  padding-left: 94px;
+  box-sizing: border-box;
+  width: 385px;
+  height: 73px;
+  position: absolute;
+  top: 275px;
+  left: 1308px;
+  font-family: Kai;
+  font-weight: 400;
+  font-size: 38px;
+  color: #F3D0A2;
+  line-height: 38px;
+  background: url(../../assets/img/page1/title.png) no-repeat;
+  background-size: 305px 100%;
+}
+
+.page1-desc {
+  width: 763px;
+  height: 325px;
+  position: absolute;
+  top: 374px;
+  right: 293px;
+  font-family: Arial,PingFang SC,PingFang SC,Microsoft YaHei,sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  color: #FFFFFF;
+  line-height: 50px;
+  letter-spacing: -1px;
+}
+
+.page1-content {
+  position: absolute;
+  top: 1083px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1360px;
+  height: 1230px;
+  background: url(../../assets/img/page1/bg1-content.png);
+  background-size: 100% 100%;
+}
+
+.page1-content-desc {
+  position: absolute;
+  bottom: 44px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1204px;
+  height: 226px;
+  font-family: PingFang SC;
+  font-weight: 300;
+  font-size: 26px;
+  color: #FFFFFF;
+  line-height: 46px;
+  text-align: center;
+}
+
+.page1-section2 {
+  position: relative;
+  margin-top: -1px;
+  width: 100%;
+  height: 2241px;
+  background: url(../../assets/img/page1/bg2.png);
+  background-size: 100% 100%;
+}
+.page1-long-title {
+  padding-left: 80px;
+  box-sizing: border-box;
+  width: 756px;
+  height: 88px;
+  position: absolute;
+  top: 97px;
+  left: 354px;
+  font-family: Kai;
+  font-weight: 400;
+  font-size: 38px;
+  color: #F3D0A2;
+  line-height: 64px;
+  background: url(../../assets/img/page1/long-title.png);
+  background-size: 100% 100%;
+}
+.page1-section2-title2{
+  position: absolute;
+  top: 212px;
+  left: 363px;
+  width: 216px;
+  height: 54px;
+  background: url(../../assets/img/page1/page1-section2-title2.png);
+  background-size: 100% 100%;
+}
+
+.page1-section2-desc {
+  position: absolute;
+  top: 282px;
+  left: 363px;
+  font-family: Arial,PingFang SC,PingFang SC,Microsoft YaHei,sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  color: #FFFFFF;
+  line-height: 42px;
+}
+.page1-section2-desc-content {
+  position: absolute;
+  top: 346px;
+  left: 491px;
+  width: 1016px;
+  height: 566px;
+  background: url(../../assets/img/page1/page1-section2-desc-content.png);
+  background-size: 100% 100%;
+}
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.page1-section2-animation {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 1920px;
+  height: 1639px;
+  background: url(../../assets/img/page1/section2-animation-bg.png);
+  background-size: 100% 100%;
+  z-index: 1;
+  transform: translateX(0) translateY(100%);
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  opacity: 0;
+}
+.animate {
+  transform: translateX(0) translateY(0);
+  opacity: 1;
+}
+.page1-section2-animation-title {
+  position: absolute;
+  top: 419px;
+  left: 713px;
+  width: 216px;
+  height: 54px;
+  background: url(../../assets/img/page1/page1-section2-animation-title.png);
+  background-size: 100% 100%;
+}
+.page1-section2-animation-desc {
+  width: 1050px;
+  font-family: Arial,PingFang SC,PingFang SC,Microsoft YaHei,sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  color: #000000;
+  line-height: 42px;
+  position: absolute;
+  right: 150px;
+  top: 510px;
+  letter-spacing: -1px;
+}
+
+.page1-section2-animation-desc +.page1-section2-animation-desc {
+  top: 696px;
+}
+
+.page1-section2-animation-desc>span {
+  color: #651611;
+}
+
+.page1-section2-animation-content {
+  width: 1431px;
+  height: 702px;
+  position: absolute;
+  left: 150px;
+  bottom: 187px;
+  background: url(../../assets/img/page1/page1-section2-animation-content.png);
+  background-size: 100% 100%;
+}
+
+.page1-section3 {
+  position: relative;
+  margin-top: -1px;
+  width: 100%;
+  height: 1412px;
+  background: url(../../assets/img/page1/bg3.png);
+  background-size: 100% 100%;
+  z-index: 2;
+}
+
+.page1-section3-title {
+  position: absolute;
+  top: -211px;
+  left: 518px;
+  width: 357px;
+  height: 54px;
+  background: url(../../assets/img/page1/bg3-title.png);
+  background-size: 100% 100%;
+}
+
+.page1-section3-title-desc {
+  position: absolute;
+  top: -132px;
+  left: 518px;
+  width: 885px;
+  height: 26px;
+  font-family: Arial,PingFang SC,PingFang SC,Microsoft YaHei,sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  color: #000000;
+  line-height: 42px;
+  letter-spacing: -1px;
+}
+
+.page1-section3-progress {
+  position: absolute;
+  top: -76px;
+  left: 472px;
+  width: 901px;
+  height: 156px;
+  background: url(../../assets/img/page1/bg3-desc.png);
+  background-size: 100% 100%;
+}
+
+.page1-section3-content {
+  position: absolute;
+  bottom: 368px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1466px;
+  height: 934px;
+  background: url(../../assets/img/page1/bg3-content.png);
+  background-size: 100% 100%;
+}
+
+.page1-section3-progress-desc1,
+.page1-section3-progress-desc2{
+  position: absolute;
+  font-family: PingFang SC;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 21px;
+  color: #020202;
+}
+
+.page1-section3-progress-desc1 {
+  left: 94px;
+  top: 15px;
+}
+
+.page1-section3-progress-desc2 {
+  left: 594px;
+  top: 15px;
+}
+
+.page1-section3-progress-desc3,
+.page1-section3-progress-desc4,
+.page1-section3-progress-desc5,
+.page1-section3-progress-desc6,
+.page1-section3-progress-desc7 {
+  position: absolute;
+  font-family: PingFang SC;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.page1-section3-progress-desc3 {
+  left: 7px;
+  top: 76px;
+}
+
+.page1-section3-progress-desc4 {
+  left: 270px;
+  top: 76px;
+}
+.page1-section3-progress-desc5 {
+  left: 611px;
+  top: 76px;
+}
+
+.page1-section3-progress-desc6 {
+  left: 152px;
+  top: 129px;
+}
+
+.page1-section3-progress-desc7 {
+  left: 646px;
+  top: 129px;
+}

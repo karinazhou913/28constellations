@@ -1,0 +1,187 @@
+
+
+/* 图标样式 */
+.lottery-icon {
+  position: absolute;
+  top: 1167px;
+  right: 64px;
+  width: 203px;
+  height: 333px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  background: url(../../assets/img/lottery/entry.png);
+  background-size: 100% 100%;
+  z-index: 3;
+}
+
+/* 摇晃动画 */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+.lottery-icon:hover {
+  animation: shake 0.5s ease-in-out;
+}
+.lottery-icon.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* 弹窗样式 */
+.modal-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  transform: scale(0.5);
+  width: 920px;
+  height: 1555px;
+  position: relative;
+  background: url(../../assets/img/lottery/bg.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 113px;
+  right: 49px;
+  width: 134px;
+  height: 172px;
+  cursor: pointer;
+  background: url(../../assets/img/lottery/close-btn.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.modal-content-text {
+  position: absolute;
+  top: 1243px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-family: PingFang SC;
+  font-weight: 300;
+  font-size: 29px;
+  color: #FFFFFF;
+  line-height: 50px;
+  text-align: center;
+}
+
+.modal-content-title {
+  height: 35px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  font-size: 38px;
+  color: #EFD781;
+  line-height: 38px;
+  margin-bottom: 40px;
+}
+
+.modal-content-name {
+  position: absolute;
+  width: 118px;
+  height: 344px;
+  top: 229px;
+  right: 197px;
+}
+.modal-content-name.name1 {
+  background: url(../../assets/img/lottery/name1.png);
+  background-size: 100% 100%;
+}
+.modal-content-name.name2 {
+  background: url(../../assets/img/lottery/name2.png);
+  background-size: 100% 100%;
+}
+.modal-content-name.name3 {
+  background: url(../../assets/img/lottery/name3.png);
+  background-size: 100% 100%;
+}
+.modal-content-name.name4 {
+  background: url(../../assets/img/lottery/name4.png);
+  background-size: 100% 100%;
+}
+.modal-content-name.name5 {
+  background: url(../../assets/img/lottery/name5.png);
+  background-size: 100% 100%;
+}
+.modal-content-name.name6 {
+  background: url(../../assets/img/lottery/name6.png);
+  background-size: 100% 100%;
+}
+.modal-content-name.name7 {
+  background: url(../../assets/img/lottery/name7.png);
+  background-size: 100% 100%;
+}
+.modal-content-name.name8 {
+  background: url(../../assets/img/lottery/name8.png);
+  background-size: 100% 100%;
+}
+.modal-content-name.name9 {
+  background: url(../../assets/img/lottery/name9.png);
+  background-size: 100% 100%;
+}
+.modal-content-name.name10 {
+  background: url(../../assets/img/lottery/name10.png);
+  background-size: 100% 100%;
+}
+
+.modal-content-img {
+  position: absolute;
+  width: 576px;
+  height: 830px;
+  top: 199px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.modal-content-img.img1 {
+  background: url(../../assets/img/lottery/lottery1.png);
+  background-size: 100% 100%;
+}
+.modal-content-img.img2 {
+  background: url(../../assets/img/lottery/lottery2.png);
+  background-size: 100% 100%;
+}
+.modal-content-img.img3 {
+  background: url(../../assets/img/lottery/lottery3.png);
+  background-size: 100% 100%;
+}
+.modal-content-img.img4 {
+  background: url(../../assets/img/lottery/lottery4.png);
+  background-size: 100% 100%;
+}
+.modal-content-img.img5 {
+  background: url(../../assets/img/lottery/lottery5.png);
+  background-size: 100% 100%;
+}
+.modal-content-img.img6 {
+  background: url(../../assets/img/lottery/lottery6.png);
+  background-size: 100% 100%;
+}
+.modal-content-img.img7 {
+  background: url(../../assets/img/lottery/lottery7.png);
+  background-size: 100% 100%;
+}
+.modal-content-img.img8 {
+  background: url(../../assets/img/lottery/lottery8.png);
+  background-size: 100% 100%;
+}
+.modal-content-img.img9 {
+  background: url(../../assets/img/lottery/lottery9.png);
+  background-size: 100% 100%;
+}
+.modal-content-img.img10 {
+  background: url(../../assets/img/lottery/lottery10.png);
+  background-size: 100% 100%;
+}

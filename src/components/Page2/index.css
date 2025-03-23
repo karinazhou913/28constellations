@@ -1,0 +1,697 @@
+.page2 {
+    position: relative;
+    width: 1920px;
+    margin: auto;
+}
+.page2-section1 {
+    position: relative;
+    width: 100%;
+    height: 3474px;
+    background: url(../../assets/img/page2/bg1.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100%); /* 初始位置在屏幕外 */
+        opacity: 0; /* 开始时透明 */
+    }
+    100% {
+        transform: translateX(0); /* 最终位置在正常位置 */
+        opacity: 1; /* 结束时不透明 */
+    }
+}
+@keyframes slide-in-right {
+    0% {
+     transform: translateX(100%); /* 初始位置在屏幕外（右侧） */
+     opacity: 0; /* 开始时透明 */
+    }
+    100% {
+     transform: translateX(0); /* 最终位置在正常位置 */
+     opacity: 1; /* 结束时不透明 */
+    }
+}
+.page2-section1-bg1 {
+    position: absolute;
+    left: 0;
+    top: 16px;
+    z-index: 2;
+    width: 976px;
+    height: 1053px;
+    background: url(../../assets/img/page2/bg1-1.png) no-repeat center center;
+    background-size: auto 100%;
+    /* opacity: 0;  */
+    /* 初始透明度 */
+    /* animation: slide-in-left 2s forwards;  */
+    /* 应用动画 */
+}
+.page2-section1-bg2 {
+    position: absolute;
+    right: 0;
+    top: 34px;
+    z-index: 2;
+    width: 1089px;
+    height: 1044px;
+    background: url(../../assets/img/page2/bg1-2.png) no-repeat center center;
+    background-size: auto 100%;
+    /* opacity: 0;  */
+    /* 初始透明度 */
+    /* animation: slide-in-right 2s forwards;  */
+    /* 应用动画 */
+    
+}
+.page2-section1-bg3 {
+    position: absolute;
+    left: 0;
+    top: 1952px;
+    z-index: 2;
+    width: 1039px;
+    height: 901px;
+    background: url(../../assets/img/page2/bg1-3.png) no-repeat center center;
+    background-size: auto 100%;
+    /* opacity: 0;  */
+    /* 初始透明度 */
+    /* animation: slide-in-left 2s forwards;  */
+    /* 应用动画 */
+}
+.page2-section1-bg4 {
+    position: absolute;
+    right: -81px;
+    top: 1952px;
+    z-index: 2;
+    width: 1039px;
+    height: 901px;
+    background: url(../../assets/img/page2/bg1-4.png) no-repeat center center;
+    background-size: auto 100%;
+    /* opacity: 0; */
+     /* 初始透明度 */
+    /* animation: slide-in-right 2s forwards;  */
+    /* 应用动画 */
+}
+.page2-section1-content {
+    position: absolute;
+    right: 0;
+    top: 446px;
+    width: 1920px;
+    height: 2244px;
+    background: url(../../assets/img/page2/bg1-content.png) no-repeat center center;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+.page2-section1-title {
+    position: absolute;
+    left: 876px;
+    top: 1016px;
+    width: 173px;
+    height: 1069px;
+    background: url(../../assets/img/page2/bg1-title.png) no-repeat center center;
+    background-size: 100% 100%;
+    z-index: 2;
+}
+
+/* 第二部分 */
+.page2-section2 {
+    position: relative;
+    margin-top: -1px;
+    width: 100%;
+    height: 1896px;
+    background: url(../../assets/img/page2/bg2.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.page2-section2-title {
+    position: absolute;
+    top: -278px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-sizing: border-box;
+    padding-left: 128px;
+    width: 542px;
+    height: 101px;
+    font-family: Kai;
+    font-weight: 400;
+    font-size: 54px;
+    color: #000000;
+    background: url(../../assets/img/page2/bg2-title.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab {
+    position: relative;
+    top: -167px;
+    left: 0;
+    right: 0;
+    height: 124px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+}
+/* Tab header */
+.page2-section2-tabItem {
+    width: 360px;
+    height: 96px;
+    margin: 0 22px;
+}
+.isActive {
+  width: 367px;
+  height: 124px;
+}
+.page2-section2-tabItem.img1 {
+    background: url(../../assets/img/page2/tab1.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tabItem.img1.isActive {
+    background: url(../../assets/img/page2/tab1-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tabItem.img2 {
+    background: url(../../assets/img/page2/tab2.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tabItem.img2.isActive {
+    background: url(../../assets/img/page2/tab2-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tabItem.img3 {
+    background: url(../../assets/img/page2/tab3.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tabItem.img3.isActive {
+    background: url(../../assets/img/page2/tab3-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tabItem.img4{
+    background: url(../../assets/img/page2/tab4.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tabItem.img4.isActive {
+    background: url(../../assets/img/page2/tab4-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+/* Tab content */
+.page2-section2-tab-container {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 22px;
+    width: 1560px;
+    height: 714px;
+    background: url(../../assets/img/page2/tab-content-bg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-container.bg0 {
+    background: url(../../assets/img/page2/tab-content-bg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-container.bg1 {
+  background: url(../../assets/img/page2/tab-content-bg1.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page2-section2-tab-container.bg2 {
+  background: url(../../assets/img/page2/tab-content-bg2.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page2-section2-tab-container.bg3 {
+  background: url(../../assets/img/page2/tab-content-bg3.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page2-section2-tab-content-item {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.page2-section2-tab-content-item:hover .page2-section2-tab-content-text{
+  opacity: 1;
+}
+.page2-section2-tab-content-img {
+  cursor: pointer;
+}
+.page2-section2-tab-content-font {
+  position: absolute;
+  top: -18px;
+  left: 3px;
+}
+.page2-section2-tab-content-text {
+  opacity: 0;
+  position: absolute;
+  width: 153px;
+  height: 157px;
+  box-sizing: border-box;
+  background: url(../../assets/img/page2/group-item-bg.png) no-repeat center center;
+  background-size: 100% 100%;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  font-size: 17px;
+  color: #FFFFFF;
+  line-height: 25px;
+  padding: 0 17px 0 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Tab第一组第一张 */
+.page2-section2-tab-content-img.group0-0 {
+    background: url(../../assets/img/page2/group0-0.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group0-0:hover {
+    background: url(../../assets/img/page2/group0-0-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group0-1 {
+    background: url(../../assets/img/page2/group0-1.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group0-1:hover {
+    background: url(../../assets/img/page2/group0-1-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group0-2 {
+    background: url(../../assets/img/page2/group0-2.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group0-2:hover {
+    background: url(../../assets/img/page2/group0-2-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group0-3 {
+    background: url(../../assets/img/page2/group0-3.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group0-3:hover {
+    background: url(../../assets/img/page2/group0-3-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group0-4 {
+    background: url(../../assets/img/page2/group0-4.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group0-4:hover {
+    background: url(../../assets/img/page2/group0-4-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group0-5 {
+    background: url(../../assets/img/page2/group0-5.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group0-5:hover {
+    background: url(../../assets/img/page2/group0-5-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group0-6 {
+    background: url(../../assets/img/page2/group0-6.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group0-6:hover {
+    background: url(../../assets/img/page2/group0-6-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+/* Tab第二组第一张 */
+.page2-section2-tab-content-img.group1-0 {
+    background: url(../../assets/img/page2/group1-0.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group1-0:hover {
+    background: url(../../assets/img/page2/group1-0-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group1-1 {
+    background: url(../../assets/img/page2/group1-1.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group1-1:hover {
+    background: url(../../assets/img/page2/group1-1-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group1-2 {
+    background: url(../../assets/img/page2/group1-2.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group1-2:hover {
+    background: url(../../assets/img/page2/group1-2-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group1-3 {
+    background: url(../../assets/img/page2/group1-3.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group1-3:hover {
+    background: url(../../assets/img/page2/group1-3-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group1-4 {
+    background: url(../../assets/img/page2/group1-4.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group1-4:hover {
+    background: url(../../assets/img/page2/group1-4-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group1-5 {
+    background: url(../../assets/img/page2/group1-5.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group1-5:hover {
+    background: url(../../assets/img/page2/group1-5-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group1-6 {
+    background: url(../../assets/img/page2/group1-6.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group1-6:hover {
+    background: url(../../assets/img/page2/group1-6-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+
+/* Tab第三组第一张 */
+.page2-section2-tab-content-img.group2-0 {
+    background: url(../../assets/img/page2/group2-0.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group2-0:hover {
+    background: url(../../assets/img/page2/group2-0-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group2-1 {
+    background: url(../../assets/img/page2/group2-1.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group2-1:hover {
+    background: url(../../assets/img/page2/group2-1-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group2-2 {
+    background: url(../../assets/img/page2/group2-2.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group2-2:hover {
+    background: url(../../assets/img/page2/group2-2-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group2-3 {
+    background: url(../../assets/img/page2/group2-3.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group2-3:hover {
+    background: url(../../assets/img/page2/group2-3-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group2-4 {
+    background: url(../../assets/img/page2/group2-4.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group2-4:hover {
+    background: url(../../assets/img/page2/group2-4-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group2-5 {
+    background: url(../../assets/img/page2/group2-5.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group2-5:hover {
+    background: url(../../assets/img/page2/group2-5-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group2-6 {
+    background: url(../../assets/img/page2/group2-6.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group2-6:hover {
+    background: url(../../assets/img/page2/group2-6-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+
+/* Tab第三组第一张 */
+.page2-section2-tab-content-img.group3-0 {
+    background: url(../../assets/img/page2/group3-0.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group3-0:hover {
+    background: url(../../assets/img/page2/group3-0-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group3-1 {
+    background: url(../../assets/img/page2/group3-1.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group3-1:hover {
+    background: url(../../assets/img/page2/group3-1-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group3-2 {
+    background: url(../../assets/img/page2/group3-2.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group3-2:hover {
+    background: url(../../assets/img/page2/group3-2-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group3-3 {
+    background: url(../../assets/img/page2/group3-3.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group3-3:hover {
+    background: url(../../assets/img/page2/group3-3-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group3-4 {
+    background: url(../../assets/img/page2/group3-4.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group3-4:hover {
+    background: url(../../assets/img/page2/group3-4-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group3-5 {
+    background: url(../../assets/img/page2/group3-5.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group3-5:hover {
+    background: url(../../assets/img/page2/group3-5-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group3-6 {
+    background: url(../../assets/img/page2/group3-6.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-img.group3-6:hover {
+    background: url(../../assets/img/page2/group3-6-active.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+/* 文字图片 */
+.page2-section2-tab-content-font {
+    width: 40px;
+    height: 40px;
+    background-size: auto 39px !important;
+}
+.page2-section2-tab-content-font.group0-0{
+    background: url(../../assets/img/page2/group0-0-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group0-1{
+    background: url(../../assets/img/page2/group0-1-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group0-2{
+    background: url(../../assets/img/page2/group0-2-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group0-3{
+    background: url(../../assets/img/page2/group0-3-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group0-4{
+    background: url(../../assets/img/page2/group0-4-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group0-5{
+    background: url(../../assets/img/page2/group0-5-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group0-6{
+    background: url(../../assets/img/page2/group0-6-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.page2-section2-tab-content-font.group1-0{
+    background: url(../../assets/img/page2/group1-0-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group1-1{
+    background: url(../../assets/img/page2/group1-1-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group1-2{
+    background: url(../../assets/img/page2/group1-2-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group1-3{
+    background: url(../../assets/img/page2/group1-3-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group1-4{
+    background: url(../../assets/img/page2/group1-4-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group1-5{
+    background: url(../../assets/img/page2/group1-5-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group1-6{
+    background: url(../../assets/img/page2/group1-6-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.page2-section2-tab-content-font.group2-0{
+    background: url(../../assets/img/page2/group2-0-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group2-1{
+    background: url(../../assets/img/page2/group2-1-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group2-2{
+    background: url(../../assets/img/page2/group2-2-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group2-3{
+    background: url(../../assets/img/page2/group2-3-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group2-4{
+    background: url(../../assets/img/page2/group2-4-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group2-5{
+    background: url(../../assets/img/page2/group2-5-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group2-6{
+    background: url(../../assets/img/page2/group2-6-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+
+.page2-section2-tab-content-font.group3-0{
+    background: url(../../assets/img/page2/group3-0-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group3-1{
+    background: url(../../assets/img/page2/group3-1-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group3-2{
+    background: url(../../assets/img/page2/group3-2-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group3-3{
+    background: url(../../assets/img/page2/group3-3-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group3-4{
+    background: url(../../assets/img/page2/group3-4-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group3-5{
+    background: url(../../assets/img/page2/group3-5-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-content-font.group3-6{
+    background: url(../../assets/img/page2/group3-6-text.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.page2-section2-title2 {
+  position: absolute;
+  top: 934px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-sizing: border-box;
+  padding-left: 156px;
+  width: 542px;
+  height: 108px;
+  background: url(../../assets/img/page2/section2-title1.png) no-repeat center center;
+  background-size: 100% 100%;
+  font-family: Kai;
+  font-weight: 400;
+  font-size: 54px;
+  color: #F8C487;
+}
+
+.page2-section2-desc {
+  position: absolute;
+  top: 934px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 138px;
+  width: 1500px;
+  text-align: center;
+  font-family: Source Han Serif CN;
+  font-weight: 500;
+  font-size: 21px;
+  color: #FFFEF3;
+}
+.page2-section2-swiper {
+  position: absolute;
+  bottom: 160px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1418px;
+  height: 542px;
+}
+
+.page2-section2-swiper-navigation {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1418px;
+  height: 32px;
+}
+
+/* 第三部分 */
+.page2-section3 {
+    position: relative;
+    margin-top: -1px;
+    width: 100%;
+    height: 1155px;
+    background: url(../../assets/img/page2/bg3.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.page2-section3-title {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 90px;
+  width: 568px;
+  height: 103px;
+  box-sizing: border-box;
+  padding-left: 46px;
+  font-family: Kai;
+  font-weight: 400;
+  font-size: 52px;
+  color: #000000;
+  background: url(../../assets/img/page2/section3-title.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.page2-section3-swiper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 262px;
+  margin: 0 auto;
+}
