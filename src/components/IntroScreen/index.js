@@ -122,7 +122,7 @@ export default function IntroScreen({
           )}
 
           <div className={classNames('media-btn', {
-            "active": muted === false
+            "active": muted !== false
           })} onClick={handlePlayMuted}></div>
         </div>
       )}
