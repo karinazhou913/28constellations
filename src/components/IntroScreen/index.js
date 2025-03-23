@@ -80,6 +80,11 @@ export default function IntroScreen({
     }
   }
 
+  const handleSkip = () => {
+    setHasVideoEnded(true);
+    setIsVideoError(true)
+  }
+
   console.log(">> muted", muted)
   return (
     <div className="container">
@@ -124,6 +129,14 @@ export default function IntroScreen({
           <div className={classNames('media-btn', {
             "active": muted !== false
           })} onClick={handlePlayMuted}></div>
+
+          {
+            hasVideoEnded ? null : <div className={classNames('skip-btn', {
+              "active": muted !== false
+            })} onClick={handleSkip}>
+              跳过
+            </div>
+          }
         </div>
       )}
 

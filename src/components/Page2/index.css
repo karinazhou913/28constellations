@@ -201,7 +201,22 @@
     background: url(../../assets/img/page2/tab-content-bg.png) no-repeat center center;
     background-size: 100% 100%;
 }
-
+.page2-section2-tab-container.bg0 {
+    background: url(../../assets/img/page2/tab-content-bg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page2-section2-tab-container.bg1 {
+  background: url(../../assets/img/page2/tab-content-bg1.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page2-section2-tab-container.bg2 {
+  background: url(../../assets/img/page2/tab-content-bg2.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page2-section2-tab-container.bg3 {
+  background: url(../../assets/img/page2/tab-content-bg3.png) no-repeat center center;
+  background-size: 100% 100%;
+}
 .page2-section2-tab-content-item {
     position: absolute;
     left: 0;

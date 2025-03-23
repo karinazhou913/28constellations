@@ -106,7 +106,9 @@ export default function Page2() {
           ))
         }
       </div>
-      <div className="page2-section2-tab-container">
+      <div className={classNames("page2-section2-tab-container", {
+        [`bg${tabIndex}`]: true
+      })}>
         {
           tabContent.map((item, index) => {
             return (
