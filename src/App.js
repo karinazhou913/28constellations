@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 import Header from './components/Header';
 import IntroScreen from './components/IntroScreen';
@@ -7,7 +7,11 @@ import Page1 from './components/Page1';
 import Page2 from './components/Page2';
 import Page3 from './components/Page3';
 import Page4 from './components/Page4';
+
+import BGM from './assets/media/BGM.mp3';
 import './App.css';
+
+
 function scrollToTop() {
   const c = document.documentElement.scrollTop || document.body.scrollTop;
   if (c > 0) {
@@ -17,13 +21,42 @@ function scrollToTop() {
 }
 function App() {
   const [tabIndex, setTabIndex] = useState(0);
+  const audioRef = useRef(null);
 
   useEffect(() => {
     scrollToTop();
   }, [tabIndex])
 
+  // 处理标签切换逻辑
+  useEffect(() => {
+    if (tabIndex >= 1 && tabIndex <= 4) {
+      // 启动循环播放
+      if (audioRef.current) {
+        audioRef.current.loop = true;
+        audioRef.current.play().catch(error => {
+          console.error('自动播放失败:', error);
+        });
+      }
+    } else if (tabIndex === 0) {
+      // 重置音频
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+        audioRef.current.loop = false;
+      }
+    }
+  }, [tabIndex]);
+
   return (
     <div className="App">
+
+      {/* 隐藏的音频元素 */}
+      <audio
+        ref={audioRef}
+        src={BGM}
+        style={{ display: 'none' }}
+      />
+
       {
         tabIndex === 0 ? null : <Header
           tabIndex={tabIndex}
