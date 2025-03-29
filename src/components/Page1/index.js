@@ -29,7 +29,16 @@ function Page1() {
         <div className="page1-desc">
           星宿文化作为中国优秀传统文化之一， 发展出天文气象、 节气时令等等应用科学，在古代领导阶级的传教下，也用于宗教信仰和阶级统治等人文秩序多种领域，在历史发展长河中，也留下了许多有关星宿的珍贵文化遗产，是传统文化中“天文”及“人文” 的庞大知识体系中的桥梁，通过恰当地把现代流行元素同传统二十八星宿文化内容相结合，加以数字化手段的探索和创新，能够很好地实现传统二十八星宿文化的弘扬
         </div>
-        <div className="page1-content"></div>
+
+        <motion.div
+          className="page1-content"
+          layout
+          initial={{ opacity: 0, rotate: 0 }}      // 初始状态
+          whileInView={{ opacity: 1, rotate: 360 }}   // 进入视口时的目标状态
+          transition={{ duration: 5 }}       // 动画过渡参数
+        >
+        </motion.div>
+
         <div className="page1-content-desc">
           古人通过观察星宿的布局空间来理解宇宙，制定历法，预测自然现象，构建神话传说以及统治信仰。<br />
           传统二十八星宿的基础属性从天文科学理论延伸而来，一开始是观测、计算月亮的轨迹日程，<br />
@@ -45,13 +54,19 @@ function Page1() {
           二十八宿：二十八星宿阵列四大星区之中，每象各分七段，每一小段称之为“宿”， <br />
           “宿”字来源于古人将月亮每晚移动到不同星区位置的行迹拟人化认为月亮在此过夜住宿
         </div>
-        <div className="page1-section2-desc-content"></div>
-
+        <motion.div
+          className="page1-section2-desc-content"
+          layout
+          initial={{ opacity: 0, x: 300 }}      // 初始状态
+          whileInView={{ opacity: 1, x: 0 }}   // 进入视口时的目标状态
+          transition={{ duration: 3 }}       // 动画过渡参数
+        >
+        </motion.div>
         <motion.div className="page1-section2-animation"
           layout
           initial={{ opacity: 0, y: 500 }}      // 初始状态
           whileInView={{ opacity: 1, y: 0 }}   // 进入视口时的目标状态
-          transition={{ duration: 1 }}       // 动画过渡参数
+          transition={{ duration: 3 }}       // 动画过渡参数
         >
           <div className="page1-section2-animation-title"></div>
 

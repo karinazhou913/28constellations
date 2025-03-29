@@ -95,7 +95,14 @@ export default function Page2() {
       <div className="page2-section1-title"></div>
     </section>
     <section className="page2-section2">
-      <div className="page2-section2-title">二十八星宿简介</div>
+      <motion.div className="page2-section2-title"
+        layout
+        initial={{ opacity: 0, x: 300 }}      // 初始状态
+        whileInView={{ opacity: 1, x: 0 }}   // 进入视口时的目标状态
+        transition={{ duration: 2 }}       // 动画过渡参数
+      >
+        二十八星宿简介
+      </motion.div>
       <div className="page2-section2-tab">
         {
           TAB.map((item, index) => (
@@ -134,10 +141,14 @@ export default function Page2() {
           })
         }
       </div>
-
-      <div className="page2-section2-title2">
+      <motion.div className="page2-section2-title2"
+        layout
+        initial={{ opacity: 0, x: 300 }}      // 初始状态
+        whileInView={{ opacity: 1, x: 0 }}   // 进入视口时的目标状态
+        transition={{ duration: 2 }}       // 动画过渡参数
+      >
         永乐宫壁画
-      </div>
+      </motion.div>
       <div className="page2-section2-desc">
         三清殿壁画中的二十八星宿，分为四组，分列于北壁的紫微、勾陈大帝身边。北壁东部的紫微大帝两侧各为七宿，北壁西部的勾陈大帝东边八宿西边<br />
         六宿。壁画中的二十八星宿的形象均为男性，其身份的识别通过特殊的造型特点来识别。有二十三位头冠上的圆饰内绘有明显的动物标识，另外五位则<br />
@@ -148,9 +159,14 @@ export default function Page2() {
       </div>
     </section>
     <section className="page2-section3">
-      <div className="page2-section3-title">
+      <motion.div className="page2-section3-title"
+        layout
+        initial={{ opacity: 0, x: 300 }}      // 初始状态
+        whileInView={{ opacity: 1, x: 0 }}   // 进入视口时的目标状态
+        transition={{ duration: 2 }}       // 动画过渡参数
+      >
         五星二十八星宿神形图
-      </div>
+      </motion.div>
       <div className="page2-section3-swiper">
         <SimpleSwiper />
       </div>
